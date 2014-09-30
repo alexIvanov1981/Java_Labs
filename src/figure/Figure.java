@@ -7,17 +7,22 @@ public class Figure {
     int width;
     int height;
     int radius;
+    String name;
 
-    public Figure(int w, int h) {  //Rectangle
+    public Figure(String n, int w, int h) {  //Rectangle
         width = w;
         height = h;
-    }
-    public Figure(int side){ //Square
-        width = height = side;
+        name = n;
     }
 
-    public Figure(int r, boolean circle){ //Circle
+    public Figure(String n, int side){ //Square
+        width = height = side;
+        name = n;
+    }
+
+    public Figure(String n, int r, boolean circle){ //Circle
         radius = r;
+        name = n;
     }
 
     public int getPerimeter(){
@@ -29,6 +34,6 @@ public class Figure {
     }
 
     public String getName(){
-        return (String) ();
+        return name;
     }
 }
