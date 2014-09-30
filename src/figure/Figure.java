@@ -27,4 +27,8 @@ public class Figure {
     public int getCircumference(){
         return (int) (2*radius*(Math.PI));
     }
+
+    public String getName(){
+        return (String) ();
+    }
 }
